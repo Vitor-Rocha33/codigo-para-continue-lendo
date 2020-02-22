@@ -1,0 +1,89 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leia-mais</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="article">
+        <h1>Titulo</h1>
+        <p>
+            Após prever o apocalipse terrestre para o último sábado (23), o autoproclamado pesquisador e numerólogo
+            David Meade,
+            que aparentemente errou sua primeira previsão, deu uma nova data para o início do fim do mundo. Em seu site,
+            ele
+            afirmou que o “juízo final”, previsto no livro bíblico do Apocalipse, começará no próximo dia 15 de outubro,
+            data
+            que marca, segundo ele, o início de “sete anos de sofrimento”. As informações são do portal de notícias
+            Newsweek.
+        </p>
+
+        <p>
+            Na semana passada, Meade ganhou as manchetes mundiais ao afirmar que um planeta conhecido como Nibiru, ou
+            Planeta X,
+            atingiria a Terra e causaria o fim do mundo no último dia 23. O numerólogo, que diz ter como base versos e
+            códigos da
+            Bíblia, agora afirma, porém, que a data foi apenas “um sinal da proximidade de um desastre”, que ocorrerá no
+            próximo
+            dia 15. “É aí que a ação começa. Espere até meados de outubro e não acredito que você ficará desapontado”,
+            afirma.
+        </p>
+
+        <div class="more">
+            <p>
+                Ainda de acordo com Meade, que citou os recentes terremotos e furacões como prelúdios do fim dos tempos,
+                em outubro
+                haverá perda de energia elétrica em todo o mundo, o que levará à guerra, fome e outros eventos
+                perigosos. O fato,
+                diz, será causado pelo impacto da Terra com o planeta Nibiru.
+            </p>
+
+            <h4>Nasa desmente</h4>
+
+            <p>
+                A tese de Meade, no entanto, já foi desmentida há anos por um cientista sênior da Nasa, a agência
+                espacial americana.
+                Num vídeo publicado no Youtube em 2012, o cientista David Morrison, nega a existência do Planeta X, com
+                explicações do
+                porquê a teoria é falsa.
+            </p>
+
+            <p>
+                “Se o planeta estivesse tão perto, seria brilhante, seria facilmente visível a olho nu. Todos nós
+                poderíamos vê-lo.
+                Se Nibiru fosse real e se fosse um planeta com uma massa substancial, ele já perturbaria as órbitas de
+                Marte e da
+                Terra. Veríamos mudanças por causa deste objeto entrando no sistema solar interno”, disse Morrison no
+                vídeo.
+            </p>
+
+            <p>
+                O planeta Nabiru está no centro de teorias da <span>conspiração do fim do mundo</span> desde os anos
+                1970.
+            </p>
+        </div>
+
+        <button class="continue-lendo">Continue Lendo</button>
+    </div>
+
+    <footer class="footer">
+        <p>@Vitor Rocha</p>
+    </footer>
+
+    <script>
+        let btnElement = document.querySelector("button.continue-lendo")
+        let moreELement = document.querySelector(".article .more")
+
+        btnElement.onclick = function () {
+            moreELement.style.display = "block";
+            btnElement.parentElement.removeChild(btnElement)
+        }
+
+    </script>
+</body>
+
+</html>
